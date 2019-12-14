@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flip a coin</title>
+</head>
+<body>
+    <script>
+        let coinFlip = prompt('enter the number of times to flip coin');
+        let tails = 0;
+        let heads = 0;
+        for(let i = 0;i<coinFlip;i++)
+        {
+            let randomNumber = Math.random();
+            if(randomNumber<0.5)
+            {
+                console.log('its tails '+randomNumber);
+                tails = tails+1;
+            }
+            else{
+                console.log('its head ' +randomNumber);
+                heads = heads +1;
+            }
+        }
+        console.log('heads ' +heads+ ' tails '+tails);
+        let percentage = (heads/(heads+tails))*100;
+        console.log('percentage of heads vs tails is ' +percentage);
+    </script>
+</body>
+</html>

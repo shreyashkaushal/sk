@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Factors</title>
+</head>
+<body>
+    <script>
+    let n = prompt('enter the number to find prime factors of it');
+    function findPrimeFactors(n) 
+    {
+
+       let primeFactors = [];
+       while (n % 2 === 0)   
+       {
+            primeFactors.push(2);
+            n = n / 2; 
+        }
+
+    let sqrtn = Math.sqrt(n);
+    for (let i = 3; i <= sqrtn; i++) 
+
+    {  
+        while (n % i === 0) 
+        {
+         primeFactors.push(i);
+         n = n / i;
+        }
+    }
+
+    if (n > 2) 
+    {
+        primeFactors.push(n);
+    }
+        return primeFactors;
+    }
+    let result = findPrimeFactors(n);
+    console.log(result);
+    
+    </script>
+</body>
+</html>

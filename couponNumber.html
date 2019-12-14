@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coupon Number</title>
+</head>
+<body>
+    <script>
+        let n = prompt('enter the number');
+        let result = [];
+        let temp = [];
+        for(let i=0;i<n;i++)
+        {
+         temp.push(Math.round(Math.random()*20));
+        }
+          
+        
+      distinctCoupons=(temp)=>{
+            return temp.filter((value,pos)=>{
+        return temp.indexOf(value) == pos 
+      })                   
+        }
+        
+    console.log('distinct numbers are ' +distinctCoupons(temp)+ ' total number is '+distinctCoupons(temp).length);
+    </script>
+    
+</body>
+</html>
