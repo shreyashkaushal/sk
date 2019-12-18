@@ -66,7 +66,7 @@ class LinkedList{
 const ll = new LinkedList();
  getInput().then((input)=>{
      let temp = 0;
- for(let i = 0; i<input.length ; i++){
+ for(let i = input.length-1; i>=0 ; i--){
      ll.insertFirst(input[i])
      if(word===input[i])
      {
