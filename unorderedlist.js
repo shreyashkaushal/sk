@@ -13,12 +13,12 @@ let word = readline.question(' Enter the word to be searched ')
             return resolve(input);
         })
     });
-}
+}   
 
 //getInput().then(input => console.log(input));
 
 
-class Node {
+class Node { 
     constructor(value,next=null)
     {
         this.value = value;
@@ -54,6 +54,7 @@ class LinkedList{
             previous.next = current.next;
         }                         
      this.size--;
+           
     }
     printList(){
         let current = this.head;
