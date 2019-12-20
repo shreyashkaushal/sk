@@ -1,4 +1,4 @@
-function quadratic (a, b, c) {
+function quadratic(a, b, c) {
   const delta = b * b - 4 * a * c
   const root1 = (-b + Math.sqrt(delta)) / (2 * a)
   const root2 = (-b - Math.sqrt(delta)) / (2 * a)

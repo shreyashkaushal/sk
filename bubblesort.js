@@ -8,13 +8,13 @@ for (i = 0; i < size; i++) {
 }
 const arr1 = arr.map(Number)
 console.log('Before sorting ' + arr1)
- for (i = 0; i <= size; i++) {
+for (i = 0; i <= size; i++) {
   for (let j = 0; j < size - i; j++) {
     if (arr1[j] > arr1[j + 1]) {
       temp = arr1[j]
-         arr1[j] = arr1[j + 1]
-         arr1[j + 1] = temp 
-     }
+      arr1[j] = arr1[j + 1]
+      arr1[j + 1] = temp
+    }
   }
 }
 console.log('After sorting ' + arr1)

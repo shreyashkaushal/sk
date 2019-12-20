@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <body>
 
-<h1 id='username'>hello  how are you!! </h1>
-<input type = 'text' placeholder='username' id= 'uid'> 
-<button onclick = 'changeText()'>Set</button>
+    <h1 id='username'>hello how are you!! </h1>
+    <input type= 'text' placeholder='username' id= 'uid'>
+    <button onclick= 'changeText()'>Set</button>
 
-<script>
+    <script>
 function changeText() {
   let properName = document.getElementById('uid').value;
   document.getElementById('username').innerHTML='Hello ' +properName+' How are you!!';
 }
 </script>
 
-</body>
+  </body>
 </html>

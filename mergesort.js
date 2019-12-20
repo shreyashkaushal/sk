@@ -7,7 +7,7 @@ for (let i = 0; i < size; i++) {
 // let arr = temp.map(Number)
 // console.log(arr)
 let unsortedArr = temp.map(Number)
-function merge (leftArr, rightArr) {
+function merge(leftArr, rightArr) {
   let sortedArr = []
   while (leftArr.length && rightArr.length) {
     if (leftArr[0] <= rightArr[0]) {
@@ -22,7 +22,7 @@ function merge (leftArr, rightArr) {
   while (rightArr.length) { sortedArr.push(rightArr.shift()) }
   return sortedArr
 }
-function mergesort (arr) {
+function mergesort(arr) {
   if (arr.length < 2) {
     return arr
   } else {

@@ -1,6 +1,6 @@
 const readline = require('readline-sync')
 const c = readline.question(' Enter the number ')
-function sqrt (c) {
+function sqrt(c) {
   let t = c
 
   const ep = 1 * (10 ** (-15))

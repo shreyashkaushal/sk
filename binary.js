@@ -3,24 +3,24 @@ let input = readline.question('Enter the decimal value ')
 // console.log(input)
 // const result = parseInt(input, 10).toString(2);
 // console.log(result);
- let result = []
-function toBinary(input){
-    let binary = []
-    let i = 0;
-    while(input>0){
-        binary[i++] = input%2
-        input = Math.floor(input/2)
+let result = []
+function toBinary(input) {
+  let binary = []
+  let i = 0;
+  while (input > 0) {
+    binary[i++] = input % 2
+    input = Math.floor(input / 2)
 
 
-    }
-    //console.log(binary)
-  return  binary.reverse();
-    
+  }
+  //console.log(binary)
+  return binary.reverse();
+
 }
 
 let newInput = toBinary(input);
-function swapNibble(newInput){
-   return ((newInput & 0x0f)<<4|(newInput& 0xf0) >>4)
+function swapNibble(newInput) {
+  return ((newInput & 0x0f) << 4 | (newInput & 0xf0) >> 4)
 
 }
 console.log(swapNibble(input))
@@ -41,7 +41,7 @@ console.log(swapNibble(input))
 //    console.log(sub2);
 //     result = sub2.concat(sub1)
 //    console.log(result);
-   
+
 // }
 
 // function toDecimal(result){

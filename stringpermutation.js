@@ -1,6 +1,6 @@
 const readline = require('readline-sync')
 const sample = readline.question('Enter the string ')
-function allPermutations (sample) {
+function allPermutations(sample) {
   const result = []
   if (sample.length === 0) {
     result.push(sample)
